@@ -6,7 +6,7 @@ class Solution {
         int cnt=0;
         while(r<arr.length){
             if(arr[r]==0) cnt++;
-            while(cnt>k){
+            if(cnt>k){
                 if(arr[l]==0) cnt--;
                 l++;
             }
