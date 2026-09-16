@@ -12,8 +12,10 @@ class Solution {
                 }
                 lo++;
             }
-            int len = hi-lo+1;
-            res=Math.max(res,len);
+            if(map.size()<=2){
+                int len = hi-lo+1;
+                res=Math.max(res,len);
+            }
         }
         return res;
     }
