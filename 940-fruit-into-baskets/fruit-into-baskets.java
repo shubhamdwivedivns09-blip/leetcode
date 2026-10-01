@@ -2,7 +2,7 @@ class Solution {
     public int totalFruit(int[] arr) {
         HashMap<Integer,Integer> map = new HashMap<>();
         int lo=0;
-        int res=1;
+        int res=0;
         for(int hi=0;hi<arr.length;hi++){
             map.put(arr[hi],map.getOrDefault(arr[hi],0)+1);
             while(map.size()>2){
