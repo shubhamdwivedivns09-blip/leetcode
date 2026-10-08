@@ -8,7 +8,8 @@ class Solution {
         for(int hi=0;hi<arr.length;hi++){
             if(arr[hi]==1){
                 cnt1++;
-            }else{
+            }
+            else{
                 cnt0++;
             }
             if(cnt0 > k) {
