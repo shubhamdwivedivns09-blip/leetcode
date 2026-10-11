@@ -1,10 +1,10 @@
 class Solution {
-    public int sumOfSquares(int[] arr) {
-        int n=arr.length;
+    public int sumOfSquares(int[] nums) {
+        int n=nums.length;
         int sum=0;
-        for(int i=1;i<=arr.length;i++){
+        for(int i=1;i<=n;i++){
             if(n%i==0){
-                sum+=arr[i-1]* arr[i-1];
+                sum+=nums[i-1]*nums[i-1];
             }
         }
         return sum;
