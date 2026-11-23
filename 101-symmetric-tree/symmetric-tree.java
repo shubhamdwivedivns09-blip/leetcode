@@ -17,17 +17,18 @@ class Solution {
     public boolean isSymmetric(TreeNode root) {
         return sym(root.left,root.right);
     }
-    public boolean sym(TreeNode p, TreeNode q) {
-        if(p==null && q ==null) return true;
-        if(p==null || q ==null) return false;
-
-        if(p.val!=q.val){
+    public boolean sym(TreeNode left, TreeNode right){
+        if(left==null && right==null){
+            return true;
+        }
+        if(left==null || right==null){
             return false;
         }
-        boolean l=sym(p.left,q.right);
-        boolean r=sym(p.right,q.left);
+        if(left.val!=right.val){
+            return false;
+        }
+        boolean l = sym(left.left,right.right);
+        boolean r = sym(left.right,right.left);
         return l&&r;
-
     }
-
 }
